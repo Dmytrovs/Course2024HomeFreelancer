@@ -1,0 +1,66 @@
+@import url("reset.css");
+
+.header h1 {
+    color:crimson;
+}
+
+.header p a {
+    color:blue;
+}
+.header .sub-paragraph {
+    color: rgb(73, 230, 0);
+}
+
+main .territory h2 {
+    color:crimson;
+}
+
+.territory > p {
+    color: #fc00b9;
+}
+
+.territory .black {
+    color:black;
+}
+.transport h2 {
+    color:firebrick;
+}
+.transport h3 strong {
+    color:blueviolet;
+}
+.transport .blue {
+    color:blue;
+}
+main .climate h3 .investigation {
+    color:rgb(184, 184, 7);
+}
+.climate > p {
+    color: red;
+}
+
+.industry > h3 ~ p {
+    color:rgb(128, 232, 24);
+}
+.industry  h3 strong {
+    color:teal;
+}
+.industry ul > li {
+    color:sienna;
+}
+.title {
+    color:salmon;
+}
+.education > p {
+    color:yellowgreen;
+}
+
+[class*="rsiti"] {
+    color:steelblue;
+}
+
+.list-footer {
+    color:aqua;
+}
+.test  + h3{
+    color:#de20ab;
+}
