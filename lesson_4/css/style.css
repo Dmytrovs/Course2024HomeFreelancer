@@ -1,0 +1,189 @@
+ /* Підключення різних шрифтів практика */
+
+ /* Через плагін Google fonts */
+@import url("https://fonts.googleapis.com/css?family=Rock+3D:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,600,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Grenze:regular,500,600,700,800&display=swap");
+
+
+/* Підключення через бібліотеку Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+/* Підключення шрифтів локально */
+@import url("fonts.css");
+/* обнулення стилів */
+@import url("reset.css");
+/* Шрифт та родина за замовчуванням */
+body {
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+.rock {
+    font-family: "Rock 3D";
+    color:aqua;
+    font-size: 29px;  
+}
+
+.monsrerate-font {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 24px;
+    color:aquamarine;
+}
+
+.antic {
+    font-family: "Antic Didone";
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.prata-fonts {
+    font-family: "Prata";
+    color:blue;
+    font-size: 23px;
+}
+
+.crimson-fonts {
+    font-family: "Crimson Text", serif;
+    color:blueviolet;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Стилі за замовчуванням для блоку pages-homework */
+.pages-homework {
+    font-family: "Grenze", serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.title-homework {
+    font-weight: 800;
+    font-size: 40px;
+    color:brown;
+}
+
+.samsung {
+    font-style: italic;
+}
+.samsung-center {
+    text-align: center;
+}
+
+.samsung-left {
+    text-align: left;
+}
+.samsung-right {
+    text-align: right;
+    color:cadetblue;
+}
+.samsung-justify {
+    text-align: justify;
+    color:burlywood;
+}
+
+.samsung-decoration {
+    text-decoration: underline;
+}
+
+.samsung-through {
+    text-decoration: line-through;
+    color:chartreuse;
+}
+
+.samsung-overline {
+    text-decoration: overline;
+    line-height: 1.944;
+    text-align: center;
+}
+
+.samsung-shadow {
+    font-size: 40px;
+    text-shadow: 3px 3px 3px hsla(323, 87%, 47%, 0.525), -5px -5px 5px hsla(184, 98%, 49%, 0.832);
+}
+
+.samsung-capitalize {
+    text-transform: capitalize;
+    text-shadow: 3px 3px 3px hsla(74, 87%, 47%, 0.525), -5px -5px 5px hsla(352, 98%, 49%, 0.832);
+}
+
+.samsung-lowercase {
+    text-transform: lowercase;
+    color:chocolate;
+    font-size: 25px;
+}
+
+.samsung-uppercase {
+    text-transform: uppercase;
+}
+
+.samsung-line-heigth {
+    color:coral;
+    line-height: 127.77%; /* 23px/18 */
+}
+
+.samsung-letter-spacing {
+    letter-spacing: 1.7px;
+}
+
+.samsung-white-space {
+    white-space: nowrap;
+    color:cornflowerblue;
+}
+
+.samsung-word-spacing {
+    word-spacing: 25px;
+    text-shadow: 5px 3px 3px hsla(124, 99%, 43%, 0.33), -5px -2px 6px hsla(312, 94%, 25%, 0.832);
+    text-decoration: underline hsl(0, 97%, 52%);
+    text-align: center;
+}
+
+
+/* Стилі макетів з фігми */
+
+.crovato {
+    color: #2b2929;
+}
+.crovato-title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.crovato-image {
+    text-align: center;
+}
+
+.crovato-text {
+    text-align: left;
+    line-height: 1.875;
+}
+
+.crovato-subtitle {
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.crovato-list {
+    text-align: left;
+    line-height: 1.875;
+}
+
+
+.footer-title {
+    font-size: 40px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.footer-text {
+    text-align: left;
+    line-height: 1.875;
+}
+
