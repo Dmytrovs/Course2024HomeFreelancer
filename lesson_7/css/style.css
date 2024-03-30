@@ -1,0 +1,287 @@
+/* Підключення шрифтів локально замовчуванням шрифт*/
+@import url("fonts.css"); 
+
+/* @import url("https://fonts.googleapis.com/css?family=Quicksand:500,700&display=swap"); */
+/* 
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css?family=Exo:regular,500,700&display=swap");
+
+/* обнулення стилів */
+@import url("reset.css");
+
+
+
+.header {
+    font-family: "Proxima Nova";
+    color: #2B2929;
+}
+.header:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.krovato {
+    padding: 10px;
+    max-width: 1070px;
+    margin: 0 auto;
+}
+.krovato-title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.20;
+    margin-bottom: 40px;
+
+}
+.krovato-image {
+    margin-bottom: 40px;
+}
+.krovato-image img {
+    border-radius: 8px;
+}
+
+.krovato-text {
+    font-weight: 400;
+    line-height: 1.875;
+}
+
+.krovato-text-2 {
+    font-weight: 400;
+    line-height: 1.875;
+}
+.krovato-text-2:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.krovato-text p:not(:last-child) {
+    margin-bottom: 20px;
+}
+.krovato-subtitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.40;
+}
+.krovato-subtitle:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.list {
+    font-weight: 400;
+    line-height: 1.875;
+}
+
+.list:not(:last-child) {
+    margin-bottom: 40px;
+}
+.item {
+
+}
+.item::before {
+    content: "";
+    background: url("../img/down.svg") no-repeat center;
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+    vertical-align: top;
+}
+
+.item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+
+.buttons {
+    font-size: 0px;
+    margin: 0 -15px;
+    color: #FFF;
+}
+.wrapper-button {
+    display: inline-block;
+    max-width: 50%;
+    width: 100%;
+    padding: 0 15px;
+}
+.wrapper-button:last-child {
+  text-align: right;
+}
+.button {
+    display: inline-block;
+    background-color: #ffbc57;
+    padding: 13px 50px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    min-width: 243px;
+    border-radius: 8px;
+}
+.button:hover {
+    background: #ffbc57c2;
+}
+
+.button::before {
+    content: "";
+    background: url("../img/arrow-left.svg") no-repeat  center left;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.button-2 {
+    display: inline-block;
+    background-color: #ffbc57;
+    padding: 13px 50px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    min-width: 243px;
+    border-radius: 8px;
+}
+.button-2:hover {
+    background: #ffbc57c2;
+}
+.button-2:after {
+    content: "";
+    background: url("../img/arrow-right.svg") no-repeat center right;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+
+
+.main {
+    padding: 10px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.90) 0%, rgba(0, 0, 0, 0.99) 85.54%), lightgray 0px -95.915px / 100% 161.298% no-repeat;
+}
+.about {
+    font-family: "Exo", sans-serif;
+    text-align: center;
+    padding: 120px 180px;
+    color: #FFF;
+
+}
+.about-title {
+    display: inline-block;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.166;
+    text-transform: uppercase;
+    max-width: 301px;
+}
+
+
+.about-decor::after {
+    content: "";
+    background: linear-gradient(90deg, #F00 0%, #42FF00 48.9%, #2400FF 100%);
+    max-width: 401px;
+    display: block;
+    height: 1px;
+    margin: 20px auto;
+}
+.about-decor::after:hover {
+    width: 50%;
+}
+
+
+.about-text {
+    font-size: 18px;
+    line-height: 2.22;
+    text-transform: capitalize;
+    letter-spacing: -0.36px;
+}
+.about-text:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.about-list {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.25;
+    text-transform: capitalize;
+}
+.about-item {
+    display: inline-block;
+}
+.about-item:not(:last-child) {
+    margin-right: 60px;
+}
+
+.about-item a::after {
+    content: "";
+    background: linear-gradient(90deg, #F00 0%, #42FF00 48.9%, #2400FF 100%) no-repeat right  center ;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-left: 60px;
+}
+.about-item:hover {
+    color:#42FF00;
+}
+
+
+.footer {
+    margin: 0 auto;
+    background:  #000001d2;
+    font-family: "Exo", sans-serif;
+}
+.footer-list {
+    padding: 45px 15px;
+    text-align: center;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 1.25;
+    letter-spacing: -0.4px;
+    text-transform: capitalize;
+}
+.item-phone .footer-gps .footer-email,
+a:hover {
+    color:#42FF00;
+    text-decoration: underline;
+}
+.item-phone .footer-gps .footer-email,
+a:hover::before {
+    transform: scale(1.2);
+}
+.item-phone {
+    display: inline-block;
+}
+.item-phone:not(:last-child) {
+    margin-right: 80px;
+}
+.item-phone a::before {
+    content: "";
+    background: url("../img/call.svg") no-repeat center;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+.footer-gps {
+    display: inline-block;
+}
+.footer-gps:not(:last-child) {
+    margin-right: 80px;
+}
+.footer-gps a::before {
+    content: "";
+    background: url("../img/location.svg") no-repeat center;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+.footer-email {
+    display: inline-block;
+}
+
+.footer-email:not(:last-child) {
+    margin-right: 80px;
+}
+
+.footer-email a::before {
+    content: "";
+    background: url("../img/email.svg") no-repeat center;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
