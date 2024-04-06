@@ -1,0 +1,16 @@
+/* Підключення шрифтів локально замовчуванням шрифт*/
+@import url("fonts.css"); 
+
+/* @import url("https://fonts.googleapis.com/css?family=Quicksand:500,700&display=swap"); */
+/* 
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css?family=Exo:regular,500,700&display=swap");
+
+/* обнулення стилів */
+@import url("reset.css");
+
+
+
+
+
