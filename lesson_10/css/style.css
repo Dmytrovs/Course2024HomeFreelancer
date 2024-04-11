@@ -1,0 +1,227 @@
+/* Підключення шрифтів локально замовчуванням шрифт*/
+@import url("fonts.css"); 
+
+/* @import url("https://fonts.googleapis.com/css?family=Quicksand:500,700&display=swap"); */
+/* 
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular&display=swap"); */
+
+/* @import url("https://fonts.googleapis.com/css?family=Exo:regular,500,700&display=swap"); */
+
+/* обнулення стилів */
+@import url("reset.css");
+
+body {
+    font-family: "Proxima Nova";
+    color: #2B2929;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+
+.page {
+    padding: 10px;
+}
+.popular-category {
+    background:#04f4f0;
+    padding: 10px;
+    font-size: 0px;
+}
+.popular-category__title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.popular-category__title:not(:last-child) {
+    margin-bottom: 40px;
+}
+.popular-category__items {
+    
+}
+.item-category {
+}
+
+.item-category:not(:last-child) {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.item-category__body {
+    background-color: #fff;
+    max-width: 250px;
+    min-height: 300px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.item-category__body:hover {
+    outline: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.236);
+}
+
+
+.item-category__body::before {
+    content: "";
+    position: absolute;
+    right: 8%;
+    bottom: 6.66%;
+    background: url("../img/popular-category/arrow.svg") 0 0 / 100% no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+.item-category__body:hover .descr-category {
+    color:red;
+}
+.descr-category {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+.descr-category__name {
+    position: absolute;
+    left: 8%;
+    top: 6.66%;
+}
+.descr-category__number {
+    position: absolute;
+    right: 8%;
+    top: 6.66%;
+    color: #B1B1B1;
+}
+.item-category__body:hover .descr-category  .descr-category__number{
+    color:rgb(225, 255, 0);
+}
+.item-category__image {
+    width: 100%;
+    max-width: 250px;
+}
+
+
+
+
+.header {
+}
+.header__menu {
+    padding: 10px;
+   
+}
+.menu {
+}
+.header__logo {
+    max-width: 250px;
+    height: 50px;
+    width: 100%;
+}
+
+.header__logo:not(:last-child) {
+    margin-right: 34px;
+}
+.menu__icon {
+
+}
+.icon-menu {
+    display: inline-block;
+    padding: 11px 20px;
+    background: #FFBC57;
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.26;
+}
+
+.icon-menu::before {
+    content: "";
+    background: url('../img/menu.svg') 0 -2px no-repeat;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.icon-menu:hover {
+    background: #ffbc57d4;
+    color: black;
+}
+
+.menu__body {
+    background:#04f4f0;
+    border-radius:8px;
+    max-width: 300px;
+    position: relative;
+    min-height: 616px;
+}
+.menu__decor {
+    border: 3px solid #FFBC57;
+    height: 99%;
+    position: absolute;
+    top: 3px;
+    right: 0;
+    z-index: 2;
+}
+.menu__list {
+    font-size: 0;
+}
+
+
+
+.menu__item {
+    max-width: 300px;
+    padding: 16px 54px 16px 85px;
+    position: relative;
+}
+
+.menu__item::before {
+    content: "";
+    background: url('../img/menu-icon/arrow.svg') 0 0 no-repeat;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 15px;
+    top: 18px;
+}
+
+.menu__item img {
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    
+}
+
+.menu__link {
+    font-size: 20px;
+    line-height: 1.4;
+}
+.menu__menu-sub {
+    position: absolute;
+    left: 215px;
+    top: 0;
+    padding: 20px 20px 156px 30px;
+}
+.sub-menu {
+    position: relative;
+    background-color:tomato;
+    min-width: 318px;
+    border-radius: 0 8px 8px 0;
+}
+.sub-menu__list {
+
+}
+.sub-menu__item {
+ 
+
+}
+.sub-menu__link {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 2.10;
+}
+
+
+
+
+
+
