@@ -1,0 +1,168 @@
+/* Підключення шрифтів локально замовчуванням шрифт*/
+@import url("fonts.css"); 
+
+/* @import url("https://fonts.googleapis.com/css?family=Quicksand:500,700&display=swap"); */
+/* 
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular&display=swap"); */
+
+/* @import url("https://fonts.googleapis.com/css?family=Exo:regular,500,700&display=swap"); */
+
+/* обнулення стилів */
+@import url("reset.css");
+
+body {
+    font-family: "Proxima Nova";
+    color: #2B2929;
+}
+
+.wrapper {
+	min-height: 100%;
+    width: 100%;
+	overflow: clip;
+    background: url('../img/depositphotos.jpg') 0 0 / cover no-repeat;
+}
+
+
+.car {
+    position: relative;
+    z-index: 100;
+    transform: scale(0.6);
+}
+
+.footer__image {
+    width: 100%;
+    max-height: 200px;
+    position: absolute;
+    bottom: 0;
+}
+
+.car__frame {
+    width: 900px;
+    height: 300px;
+    background-color: rgb(255, 25, 0);
+    position: relative;
+    border-radius: 10px 10px 15px 0;
+    transform: translate(0, 160%);
+}
+
+.car__door-1 {
+    display: inline-block;
+    width: 70px;
+    height: 250px;
+    background-color:rgba(246, 15, 3, 0.448);
+    transform: translate(20px, 50px);
+    outline: 10px solid black;
+    border-radius:10px;
+}
+.car__door-2 {
+    display: inline-block;
+    width: 70px;
+    height: 250px;
+    background-color:rgba(246, 15, 3, 0.497);
+    transform: translate(60px, 50px);
+    outline: 10px solid black;
+    border-radius:10px;
+}
+
+.dor__window {
+    width: 50px;
+    height: 80px;
+    background-color:rgb(21, 21, 20);
+    transform: translate(10px, 10px);
+    border-radius: 20px;
+}
+
+.car__windows {
+    display: inline-block;
+    transform: translate(40px, -120px);
+}
+
+.window__car {
+    width: 100px;
+    height: 100px;
+    background-color:black;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+
+.windshield__window {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color:black;
+    transform: translate(80px, -100px);
+    border-radius: 10px;
+}
+
+.car:hover .windshield__window {
+    max-width: 150px;
+    height: 150px;
+    background: url('../img/simpson.png') 0 0 / cover no-repeat;
+    width: 100%;
+}
+
+.wheel-car {
+    transform: translate(120px, -10px);
+    border-radius: 50%;
+    background-color:#2B2929;
+    width: 140px;
+    height: 140px;
+    position: relative;
+    border: 10px dotted rgba(0, 0, 0, 0.647);
+    box-shadow: 2px -5px 10px rgb(3, 234, 234);
+}
+
+
+.wheel-car_right {
+    /* position: absolute;
+    top: 0;
+    right: 0; */
+    transform: translate(740px, -150px);
+}
+
+.wheel-car__circle {
+    border-radius: 50%;
+    background-color: red;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.white__carcase {
+    display: inline-block;
+    width: 900px;
+    height: 100px;
+    background-color:rgb(0, 128, 0);
+    position: absolute;
+    bottom:0;
+    z-index: -1;
+    border-bottom-right-radius: 15px;
+}
+
+.car__headlight {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    background-color:orange;
+    border-radius: 10px;
+    top: 70%;
+    right: -5px;
+}
+
+.car:hover .car__headlight {
+    background-color:rgb(0, 221, 255);
+    box-shadow: 40px 0px 25px rgb(242, 114, 3);
+}
+.car__headlight--left {
+    top: 70%;
+    left: -10px;
+    background-color:rgb(98, 43, 54);
+    height: 30px;
+    width: 20px;
+}
+.car:hover  .car__headlight--left {
+    background-color:rgb(255, 2, 2);
+}
