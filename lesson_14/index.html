@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашка 14 </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <div class="main__container">
+                <form action="#" class="form">
+                    <h1 class="form__title">Оформлення замовлення</h1>
+                    <div class="buyer-information">
+                        <div class="buyer-information__title title-info">
+                            <img src="img/icons/icon-info.svg" alt="icon" class="title-info__icon">
+                            <h2 class="title-info__text">Інформація про покупця</h2>
+                        </div>
+                        <div class="buyer-information__lines">
+                            <div class="buyer-information__line">
+                                <input name="form[]" type="text" placeholder="Прізвище" class="buyer-information__input">
+                            </div>
+                            <div class="buyer-information__line">
+                                <input name="form[]" type="tel" placeholder="Контактний телефон" class="buyer-information__input">
+                            </div>
+                            <div class="buyer-information__line">
+                                <input name="form[]" type="text" placeholder="Ім’я" class="buyer-information__input">
+                            </div>
+                            <div class="buyer-information__line">
+                                <input name="form[]" type="email" placeholder="E-mail" class="buyer-information__input">
+                            </div>
+                            <div class="buyer-information__line">
+                                <input name="form[]" type="text" placeholder="По батькові" class="buyer-information__input">
+                            </div>
+                        </div>
+
+                        <div class="check">
+                            <label class="check__checkbox checkbox">
+                                <input type="checkbox" class="checkbox__input">
+                                <span class="checkbox__text">Отримуватиме замовлення інша людина</span>
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div class="delivery">
+                        <div class="delivery__title title-info">
+                            <img src="img/icons/icon-dostavka.svg" alt="icon" class="title-info__icon">
+                            <h2 class="title-info__text">Вибір способу доставки</h2>
+                        </div>
+                        <div class="delivery__body">
+                            <div class="delivery__item item-delivery">
+                                <div class="item-delivery__content">
+                                    <a href="#" class="item-delivery__icon">
+                                        <img src="img/icons/check-circle.svg" alt="icon">
+                                    </a>
+                                    <a href="#" class="item-delivery__text">Самовивіз із магазину</a>
+                                    <h4 class="item-delivery__descr">Бесплатно</h4>
+                                </div>
+
+                                <div class="item-delivery__content">
+                                    <a href="#" class="item-delivery__icon">
+                                        <img src="img/icons/np.svg" alt="icon">
+                                    </a>
+                                    <a href="#" class="item-delivery__text">Доставка Нова Пошта</a>
+                                    <h4 class="item-delivery__descr">≈ від 500 грн</h4>
+                                </div>
+
+                                <div class="item-delivery__content">
+                                    <a href="#" class="item-delivery__icon">
+                                        <img src="img/icons/shop.svg" alt="icon">
+                                    </a>
+                                    <a href="#" class="item-delivery__text">Доставка кур'єром</a>
+                                    <h4 class="item-delivery__descr">≈ від 200 грн</h4>
+                                </div>
+                            </div>
+                            <div class="delivery__location">
+                                <div class="location">
+                                    <img src="img/icons/location.svg" alt="location" class="location__icon">
+                                    <div class="location__text">
+                                        <p class="location__descr">Графік роботи: щодня з 9:00 до 18:00</p>
+                                        <a href="#" class="location__title">м. Київ, пров. Ізяславський 52, пов. 2</a>
+                                    </div>
+                                </div>
+                                <button type="button" class="location-button">На мапі</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="way">
+                        <div class="way__title title-info">
+                            <img src="img/icons/icon-dostavka.svg" alt="icon" class="title-info__icon">
+                            <h2 class="title-info__text">Вибір способу доставки</h2>
+                        </div>
+                        <div class="radio-btn">
+                            <label class="radio-btn__label" for="radio-item-01">
+                                <input id="radio-item-01" class="radio-btn__input"  name="radio-item" value="1" type="radio">
+                                <span class="radio-btn__text">Готівкою при отриманні (Післясплата)</span>
+                            </label>
+
+                            <label class="radio-btn__label" for="radio-item-02">
+                                <input checked id="radio-item-02" class="radio-btn__input" name="radio-item" value="1" type="radio">
+                                <span class="radio-btn__text">Оплата карткою на сайті</span>
+                                <img src="img/icons/master-card-logo.svg" alt="icon" class="radio-btn-icon">
+                                <img src="img/icons/visa-card-logo.svg" alt="icon" class="radio-btn-icon">
+                            </label>
+
+                            <label class="radio-btn__label" for="radio-item-03">
+                                <input id="radio-item-03" class="radio-btn__input" name="radio-item" value="1" type="radio">
+                                <span class="radio-btn__text">Privat Pay</span>
+                                <img src="img/icons/privat-pay-logo.svg" alt="icon" class="radio-btn-icon">
+                            </label>
+
+                            <label class="radio-btn__label" for="radio-item-04">
+                                <input id="radio-item-04" class="radio-btn__input" name="radio-item" value="1" type="radio">
+                                <span class="radio-btn__text">Кредит від Krovato</span>
+                            </label>
+
+                            <label class="radio-btn__label" for="radio-item-05">
+                                <input id="radio-item-05" class="radio-btn__input" name="radio-item" value="1" type="radio">
+                                <span class="radio-btn__text">Оплата частинами ПриватБанк</span>
+                                <img src="img/icons/privaty-credit-logo.svg" alt="icon" class="radio-btn-icon">
+                            </label>
+
+                            <label class="radio-btn__label" for="radio-item-06">
+                                <input id="radio-item-06" class="radio-btn__input" name="radio-item" value="1" type="radio">
+                                <span class="radio-btn__text">Оплата частинами МоноБанк</span>
+                                <img src="img/icons/mono-bank-logo.svg" alt="icon" class="radio-btn-icon">
+                            </label>
+                        </div>    
+                    </div>
+
+                    <div class="comment">
+                        <div class="comment__title title-info">
+                            <img src="img/icons/icon-comment.svg" alt="icon" class="title-info__icon">
+                            <h2 class="title-info__text">Коментар до замовлення</h2>
+                        </div>
+                        <textarea placeholder="Ваш коментар" autocomplete="off" name="message" class="comment__area"></textarea>
+                    </div>
+                    <div class="button-send">
+                        <button type="submit" class="btn-send">ОФОРМИТИ ЗАМОВЛЕННЯ</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
