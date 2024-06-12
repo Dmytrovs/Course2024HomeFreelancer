@@ -1,0 +1,206 @@
+@use "sass:math";
+
+// Підключення шрифтів з Google Fonts
+@import url("https://fonts.googleapis.com/css?family=Orbitron:500,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo:regular,700,900&display=swap");
+// Локальне підключення шрифтів
+@import "_fonts.scss";
+// Скидання стилів
+@import "_reset.scss";
+
+// ==========================================================
+
+body {
+	background-color: #000001;
+	color: #fff;
+	font-family: "Exo", sans-serif;
+	font-weight: 400;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+/* ------------------------- */
+[class*="__container"] {
+	max-width: 1310px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+/* ------------------------ */
+
+.header {
+	padding-top: 70px;
+	padding-bottom: 40px;
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 50;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: red;
+		z-index: 4;
+		@media (max-width: 767px){
+			  z-index: 5;
+		}
+	}
+		// .header__container
+
+		&__container {
+			display: flex;
+			column-gap: 102px;
+			justify-content: space-between;
+			align-items: center;
+			position: relative;
+			z-index: 4;
+		}
+
+		// .header__logo
+
+		&__logo {
+			font-size: 30px;
+			font-style: normal;
+			line-height: 1.5;
+			@media (max-width: 767px){
+				position: relative;
+				  z-index: 10;
+			}
+		
+		}
+
+		// .header__menu
+
+		&__menu {
+	
+		}
+
+		// .header__social
+
+		&__social {
+		}
+}
+.menu {
+	@media (max-width: 767px){
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color:rgb(230, 64, 205);
+		z-index: -1;
+	}
+		&__icon {
+			display: none;
+		}
+		@media (max-width: 767px) {
+			&__icon {
+				display: block;
+				position: relative;
+				width: 30px;
+				height: 20px;
+				left: 0;
+				z-index: 50;
+				&::before,
+				&::after {
+					content: "";
+					background-color: #fff;
+					position: absolute;
+					width: 100%;
+					height: 2px;
+					left: 0;
+				}
+				&::before {
+					top: 0;
+				}
+				&::after {
+					bottom: 0;
+				}
+				span {
+					position: absolute;
+					background-color:#fff;
+					width: 100%;
+					height: 2px;
+					left: 0;
+					top: 9px;
+				}
+			}
+
+		}
+
+		// .menu__body
+
+		&__body {
+			display: flex;
+			column-gap: 60px;
+			row-gap: 10px;
+			flex-wrap: wrap;
+			justify-content: center;
+
+		}
+
+		// .menu__list
+
+		&__list {
+			
+		}
+
+		// .menu__item
+
+		&__item {
+		}
+
+		// .menu__link
+
+		&__link {
+			font-family: Orbitron;
+			font-weight: 500px;
+			text-transform: uppercase;
+			line-height: 1.25;
+		}
+
+	}
+
+.social-header {
+
+		// .social-header__list
+
+		&__list {
+			display: flex;
+			// flex-wrap: wrap;
+			column-gap: 19px;
+			row-gap: 10px;
+			// @media (max-width: 767px){
+			// 	flex-wrap: wrap;
+			// 	position: relative;
+			// }
+		}
+
+		// .social-header__item
+
+		&__item {
+		}
+
+		// .social-header__link
+
+		&__link {
+			width: 15px;
+			height: 15px;
+			img {
+				max-width: 100%;
+				object-fit: contain;
+			}
+		}
+}
+
