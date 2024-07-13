@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Кодування тексту -->
+		<meta charset="UTF-8">
+		<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Підключення окремого файлу стилів -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Заголовок сторінки в браузері -->
+		<title>Lesson 21</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+			</header>
+			<main class="main">
+				<div class="task">
+					<div class="task__container">
+					<div class="task__title">Урок №21 (Основи JavaScript. Частина №1)</div>
+					<ul class="task__list">
+						<li class="task__item item-task">
+							<h2 class="item-task__title">Задача №1</h2>
+							<div class="item-task__descr">
+								<p>Яка назва змінної вірна:</p>
+							</div>
+								<ul class="item-task__lists">
+									<li class="item-task__body-item">
+										<span>1) let user-name</span>
+									</li>
+									<li class="item-task__body-item">
+										<span>2) let UserName</span>
+									</li>
+									<li class="item-task__body-item">
+										<span>3) let userName</span>
+									</li>
+								</ul>
+								<div class="item-task__answer">
+									Вірна відповідь: 
+									<span>3) let userName</span>
+								</div>
+						</li>
+						<li class="task__item item-task">
+							<h2 class="item-task__title">Задача №2</h2>
+							<div class="item-task__descr">
+								<p>Чи буде помилка при виконанні наступної програми:</p>
+							</div>
+							<ul class="item-task__lists">
+								<li class="item-task__body-item">
+									<span>const userName = 20</span>
+								</li>
+								<li class="item-task__body-item">
+									<span>userName = "Іштван"</span>
+								</li>
+							</ul>
+							<div class="item-task__answer">
+								Так, буде помилка <span>TypeError: Assignment to constant variable.</span> ключове слово <span>const</span> використовується для оголошення констант, значення яких не можна змінювати після присвоєння.
+							</div>
+						</li>
+							<li class="task__item item-task">
+								<h2 class="item-task__title">Задача №3</h2>
+								<div class="item-task__descr">
+									<p>Що потрапить в консоль?</p>
+								</div>
+								<ul class="item-task__lists">
+									<li class="item-task__body-item">
+										<span>let numOne = 20</span>
+									</li>
+									<li class="item-task__body-item">
+										<span>let numTwo = "20"</span>
+									</li>
+									<li class="item-task__body-item">
+										<span>let numSumm = numOne + numTwo</span>
+									</li>
+									<li class="item-task__body-item">
+										<span>console.log(numSumm)</span>
+									</li>
+								</ul>
+								<div class="item-task__answer">
+									Оператор <span>+</span> в JavaScript виконує конкатенацію рядків, якщо один з операндів є рядком. Тому у консоль потрапить значення <span>"2020"</span>
+								</div>
+							</li>
+					</ul>
+					</div>
+				</div>
+			</main>
+			<footer class="footer"></footer>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
