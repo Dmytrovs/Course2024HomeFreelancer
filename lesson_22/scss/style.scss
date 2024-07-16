@@ -1,0 +1,166 @@
+@use "sass:math";
+
+// Підключення шрифтів з Google Fonts
+// @import url("https://fonts.googleapis.com/css?family=Syne:regular,500,600,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700,800&display=swap");
+// Локальне підключення шрифтів
+@import "_fonts.scss";
+// Скидання стилів
+@import "_reset.scss";
+// Міксіни
+@import "_mixins.scss";
+
+$mainColor: #FF3333;
+
+// ==========================================================
+
+body {
+	color: #000;
+	font-family: "Inter", sans-serif;
+	font-size: toRem(16);
+	font-weight: 400;
+	background-color: #f2f0f1;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+/* ------------------------- */
+[class*="__container"] {
+	max-width: 1295px;
+	padding-inline-start: toRem(15);
+	padding-inline-end: toRem(15);
+	margin: 0 auto;
+}
+/* ------------------------ */
+
+
+.task {
+	background: url('../img/js.jpeg') center / cover no-repeat;
+		block-size: 100svh;
+		overflow: auto;
+		// .task__container
+
+		&__container {
+				padding-block-start: toRem(20);
+				padding-block-end: toRem(20);
+		}
+
+		// .task__title
+
+		&__title {
+			font-size: toRem(35);
+			font-weight: 900;
+			text-align: center;
+			&:not(:last-child) {
+				margin-bottom: toRem(30);
+			}
+		}
+
+		// .task__list
+
+		&__list {
+			display: inline-flex;
+			flex-wrap: wrap;
+			gap: toRem(20);
+			justify-content: space-around;
+		}
+
+		// .task__item
+
+		&__item {
+		}
+}
+.item-task {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	// inline-size: 100%;
+	max-inline-size: toRem(450);
+	outline: toRem(3) solid black;
+	border-radius: toRem(10);
+	padding-block: toRem(10);
+	padding-inline: toRem(10);
+	row-gap: toRem(20);
+	background-color: #eccd01f0;
+	transition: background-color 0.3s;
+	cursor: pointer;
+	@media (any-hover: hover){
+		&:hover{
+			background-color: #f4dd41;
+		}
+	}
+		// .item-task__title
+
+		&__title {
+			font-size: toRem(30);
+			font-weight: 800;
+		}
+
+		// .item-task__descr
+
+		&__descr {
+			font-size: toRem(18);
+			font-weight: 500;
+		}
+
+		// .item-task__lists
+
+		&__lists {
+		}
+
+		// .item-task__body-item
+
+		&__body-item {
+			font-size: toRem(19);
+			font-weight: 600;
+			color:rgb(5, 5, 77);
+			&:not(:last-child) {
+				margin-bottom: toRem(10);
+			}
+		}
+		&__image {
+			img {
+				max-inline-size: 100%;
+				// aspect-ratio: 360 / 180;
+				// inline-size: 100%;
+				// block-size: 100%;
+				// object-fit: contain;
+			}
+		}
+
+		// .item-task__answer
+
+		&__answer {
+			font-size: toRem(18);
+			font-weight: 500;
+			line-height: 1.1;
+			p {
+				&:not(:last-child) {
+				margin-bottom: toRem(10);
+			}
+			}
+			span {
+				color: $mainColor;
+			}
+			img {
+				max-inline-size: 100%;
+				// aspect-ratio: 250 / 250;
+				// inline-size: 100%;
+				// block-size: toRem(200);
+				// object-fit: contain;
+			}
+		}
+}
+
+
+
+
+
+
+

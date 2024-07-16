@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Кодування тексту -->
+		<meta charset="UTF-8">
+		<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Підключення окремого файлу стилів -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Заголовок сторінки в браузері -->
+		<title>Lesson 22</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+			</header>
+			<main class="main">
+				<div class="task">
+					<div class="task__container">
+					<div class="task__title">Урок №22 (Основи JavaScript. Частина №2)</div>
+					<ul class="task__list">
+						<li class="task__item item-task">
+							<h2 class="item-task__title">Задача №1</h2>
+							<div class="item-task__descr">
+								<p>Що потрапить в консоль?</p>
+							</div>
+								<ul class="item-task__lists">
+									<li class="item-task__body-item">
+										<span>let someVar = 0;</span>
+									</li>
+									<li class="item-task__body-item">
+										<span>++someVar;</span>
+									</li>
+									<li class="item-task__body-item">
+										<span>if (someVar) {
+										console.log(someVar);
+										}</span>
+									</li>
+								</ul>
+								<div class="item-task__answer">
+									Відповідь: результат в консолі буде 1;
+									<span>Ми оголосили зміну someVar зі значенням нуль. На наступному кроці ми виконуємо ++someVar тобто збыльшуємо нуль на 1, тому до змінної "someVar" додається одиничка за допомогою інкрименту ++. В конструкції if перевіряється someVar, якщо не дорівнює нулю, undefined, null, false, nan, порожньому рядку тоді умова виконується і дорівнює 1</span>
+								</div>
+						</li>
+						<li class="task__item item-task">
+							<h2 class="item-task__title">Задача №2</h2>
+							<div class="item-task__descr">
+								<p>За допомогою циклу FOR виведіть в консоль 10 рядків:</p>
+							</div>
+							<ul class="item-task__lists">
+								<li class="item-task__image">
+									<img src="img/task-02.jpg" alt="image">
+								</li>
+							</ul>
+							<div class="item-task__answer">
+								<img src="img/answer-02.jpg" alt="image">
+							</div>
+						</li>
+							<li class="task__item item-task">
+								<h2 class="item-task__title">Задача №3</h2>
+								<div class="item-task__descr">
+									<p>Що потрапить в консоль?</p>
+								</div>
+								<ul class="item-task__lists">
+									<li class="item-task__image">
+										<img src="img/task-03.jpg" alt="image">
+									</li>
+								</ul>
+								<div class="item-task__answer">
+										<img src="img/answer-03.jpg" alt="image">
+								</div>
+							</li>
+							<li class="task__item item-task">
+								<h2 class="item-task__title">Задача №4</h2>
+								<div class="item-task__descr">
+									<p>Створіть функцію, яка повертає результат ділення числа a на число b з додаванням рядка "Результат ділення: "
+									Викличте функцію передаючі різні значення, у тому числі не передаючи зовсім.
+									Функція не має повертати NaN, Infinite або помилку</p>
+								</div>
+								<div class="item-task__answer">
+									<img src="img/answer-04.jpg" alt="image">
+								</div>
+							</li>
+							<li class="task__item item-task">
+								<h2 class="item-task__title">Задача №5</h2>
+								<div class="item-task__descr">
+									<p>
+									Створіть масив даних - 5 елементів, один з яких число 10
+									Обробіть масив за допомогою методу перебору
+									Перевіряйте елемент на відповідність числу 10, та у разі відповідності, виводьте в консоль</p>
+								</div>
+								<div class="item-task__answer">
+									<img src="img/answer-05.jpg" alt="image">
+								</div>
+							</li>
+					</ul>
+					</div>
+				</div>
+			</main>
+			<footer class="footer"></footer>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
