@@ -1,0 +1,121 @@
+@use "sass:math";
+
+// Підключення шрифтів з Google Fonts
+// @import url("https://fonts.googleapis.com/css?family=Syne:regular,500,600,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700,800&display=swap");
+// Локальне підключення шрифтів
+@import "_fonts.scss";
+// Скидання стилів
+@import "_reset.scss";
+// Міксіни
+@import "_mixins.scss";
+
+$mainColor: #FF3333;
+
+// ==========================================================
+
+body {
+	color: #000;
+	font-family: "Inter", sans-serif;
+	font-size: toRem(16);
+	font-weight: 400;
+	background-color: #f2f0f1;
+}
+
+body {
+	opacity: 0;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+/* ------------------------- */
+[class*="__container"] {
+	max-width: 1295px;
+	padding-inline-start: toRem(15);
+	padding-inline-end: toRem(15);
+	margin: 0 auto;
+}
+/* ------------------------ */
+.header {
+	display: flex;
+	min-block-size: toRem(50);
+	justify-content: center;
+	align-items: center;
+	background-color:orange;
+}
+
+.main {
+	background: url('../img/js.jpeg') center / cover no-repeat;
+		// block-size: 100svh;
+		// overflow: auto;
+}
+
+
+.footer {
+	display: flex;
+	min-block-size: toRem(50);
+	justify-content: center;
+	align-items: center;
+	background-color:rgb(139, 93, 8);
+}
+.title {
+		padding-block-start: toRem(40);
+		font-size: toRem(35);
+		font-weight: 900;
+		text-align: center;
+		&:not(:last-child) {
+			margin-bottom: toRem(30);
+		}
+}
+.task-home {
+	text-align: center;
+	color:#FF3333;
+	font-size: toRem(30);
+	font-weight: 900;
+}
+
+
+//========================================================================================================================================================  TASK 1
+
+
+.active {
+	color: #0400f1;
+}
+
+
+//========================================================================================================================================================   TASK 2
+
+.loaded {
+	 body {
+		opacity: 1;
+	}
+}
+
+//========================================================================================================================================================  TASK 3
+
+.color-footer {
+	background-color: greenyellow;
+}
+
+//======================================================================================================================================================== TASK 4
+.text {
+	&:not(:last-child) {
+		margin-bottom: toRem(15);
+	}
+}
+.item {
+	display: inline-block;
+	background-color:#FF3333;
+	padding-block: toRem(10);
+	padding-inline: toRem(30);
+	&:not(:last-child) {
+		margin-bottom: toRem(15);
+	}
+}
